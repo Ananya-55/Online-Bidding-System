@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { register } from './UserFunctions'
+import './style.css'
 
 class Register extends Component {
   constructor() {

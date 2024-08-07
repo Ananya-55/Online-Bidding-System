@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { login } from './UserFunctions'
+import './style.css'
 
 class Login extends Component {
   constructor() {
