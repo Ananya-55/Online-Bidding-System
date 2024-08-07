@@ -10,7 +10,7 @@ auctions.use(cors())
 process.env.SECRET_KEY = 'secret'
 
   
-    
+
     auctions.post('/create-auction', (req, res) => {
     
       const { user_id, title, starting_bid, end_date } = req.body;
@@ -64,7 +64,7 @@ process.env.SECRET_KEY = 'secret'
 //     });
 // });
 
-router.put('/update-auction', (req, res) => {
+auctions.put('/update-auction', (req, res) => {
   const { user_id, title, description, starting_bid, current_bid, end_date } = req.body;
 
   Auction_item.update(
@@ -92,7 +92,7 @@ router.put('/update-auction', (req, res) => {
 });
 
 // Delete Auction by Title and User ID
-router.delete('/delete-auction', (req, res) => {
+auctions.delete('/delete-auction', (req, res) => {
   const { user_id, title } = req.body;
 
   Auction_item.destroy({
