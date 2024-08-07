@@ -3,7 +3,7 @@
 1. Node.js: Ensure Node.js is installed. It can downloaded from here.
 2. MySQL: Ensure MySQL server is installed and running.
 3. npm: Node Package Manager, which comes with Node.js.
-##.env File
+## .env File
 Create a .env file in the root of your project with the following content:
 DB_HOST=db_host
 DB_USER=db_user
